@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      "openapi-validator@0.14.1",
+      "/p/ptm"
+    ]
+  ],
+  "_from": "openapi-validator@0.14.1",
+  "_id": "openapi-validator@0.14.1",
+  "_inBundle": false,
+  "_integrity": "sha512-oVhu5Q9F99xSTL8VzkF/5Z/FRjOEO2m5XJj9dI1IAqdTlimcmrHDqZ22MQY0YNh0K9S+SiwYIKoSoyrnoyzP8Q==",
+  "_location": "/openapi-validator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "openapi-validator@0.14.1",
+    "name": "openapi-validator",
+    "escapedName": "openapi-validator",
+    "rawSpec": "0.14.1",
+    "saveSpec": null,
+    "fetchSpec": "0.14.1"
+  },
+  "_requiredBy": [
+    "/jest-openapi"
+  ],
+  "_resolved": "https://registry.npmjs.org/openapi-validator/-/openapi-validator-0.14.1.tgz",
+  "_spec": "0.14.1",
+  "_where": "/p/ptm",
+  "author": {
+    "name": "OpenApiChai",
+    "email": "openapichai@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/openapi-library/OpenAPIValidators/issues"
+  },
+  "contributors": [
+    {
+      "name": "rwalle61",
+      "email": "richard.lh.waller@gmail.com"
+    },
+    {
+      "name": "Jonny Spruce",
+      "email": "jspruce94@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "combos": "^0.2.0",
+    "fs-extra": "^9.0.0",
+    "js-yaml": "^4.0.0",
+    "openapi-response-validator": "^9.2.0",
+    "openapi-schema-validator": "^9.2.0",
+    "path-parser": "^6.1.0",
+    "typeof": "^1.0.0",
+    "@types/request": "^2.48.7"
+  },
+  "description": "Common code for jest-openapi and Chai OpenAPI Response Validator",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.12",
+    "@types/js-yaml": "^4.0.3",
+    "@types/superagent": "^4.1.12",
+    "@types/typeof": "^1.0.0",
+    "openapi-types": "^9.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "gitHead": "c58f4d016a69d080b03c3f5bbc1f5b45a8ef79be",
+  "homepage": "https://github.com/openapi-library/OpenAPIValidators#openapi-validators",
+  "keywords": [
+    "jest",
+    "chai",
+    "openapi",
+    "testing",
+    "response",
+    "validate"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "openapi-validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/openapi-validator"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "format": "prettier --write . --ignore-path ../../.prettierignore",
+    "lint": "tsc --noEmit && eslint .",
+    "lint:fix": "yarn lint --fix",
+    "prepack": "yarn build",
+    "test": "echo",
+    "test:ci": "echo"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.14.1"
+}
